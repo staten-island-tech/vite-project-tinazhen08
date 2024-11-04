@@ -1,770 +1,888 @@
-const movies = {
-  Action: [
-    {
-      name: "Die Hard",
-      url: "",
-      description:
-        "An NYPD officer battles terrorists in a Los Angeles skyscraper.",
-    },
-    {
-      name: "Mad Max: Fury Road",
-      url: "",
-      description:
-        "In a post-apocalyptic world, a warrior teams up with rebels to save a group of women.",
-    },
-    {
-      name: "John Wick",
-      url: "",
-      description:
-        "A retired hitman seeks vengeance against those who wronged him.",
-    },
-    {
-      name: "The Dark Knight",
-      url: "",
-      description:
-        "Batman faces the Joker, a criminal mastermind bent on chaos.",
-    },
-    {
-      name: "Gladiator",
-      url: "",
-      description:
-        "A betrayed Roman general seeks revenge against the corrupt emperor.",
-    },
-  ],
-  Comedy: [
-    {
-      name: "Superbad",
-      url: "",
-      description:
-        "Two high school friends navigate a wild night before graduation.",
-    },
-    {
-      name: "The Hangover",
-      url: "",
-      description:
-        "A bachelor party in Las Vegas goes horribly wrong after a night of partying.",
-    },
-    {
-      name: "Bridesmaids",
-      url: "",
-      description:
-        "A woman's life spirals out of control as she competes to be her best friend's maid of honor.",
-    },
-    {
-      name: "Mean Girls",
-      url: "",
-      description:
-        "A teenage girl navigates the social cliques of a new high school.",
-    },
-    {
-      name: "Groundhog Day",
-      url: "",
-      description:
-        "A weatherman relives the same day over and over until he gets it right.",
-    },
-  ],
-  Drama: [
-    {
-      name: "The Shawshank Redemption",
-      url: "",
-      description:
-        "A man wrongfully imprisoned forms a friendship with a fellow inmate.",
-    },
-    {
-      name: "Forrest Gump",
-      url: "",
-      description:
-        "A slow-witted man inadvertently influences major historical events.",
-    },
-    {
-      name: "Fight Club",
-      url: "",
-      description:
-        "An insomniac office worker forms an underground fight club.",
-    },
-    {
-      name: "The Godfather",
-      url: "",
-      description:
-        "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
-    },
-    {
-      name: "Pulp Fiction",
-      url: "",
-      description: "Interconnected stories of crime unfold in Los Angeles.",
-    },
-  ],
-  Horror: [
-    {
-      name: "The Shining",
-      url: "",
-      description: "A family becomes winter caretakers of a haunted hotel.",
-    },
-    {
-      name: "Get Out",
-      url: "",
-      description:
-        "A young Black man uncovers a disturbing secret while visiting his white girlfriend's family.",
-    },
-    {
-      name: "A Nightmare on Elm Street",
-      url: "",
-      description: "Teens are hunted in their dreams by a vengeful spirit.",
-    },
-    {
-      name: "The Babadook",
-      url: "",
-      description:
-        "A mother and her son are haunted by a sinister presence from a storybook.",
-    },
-    {
-      name: "Hereditary",
-      url: "",
-      description:
-        "A family uncovers dark secrets after the death of their secretive grandmother.",
-    },
-  ],
-  SciFi: [
-    {
-      name: "Blade Runner",
-      url: "",
-      description:
-        "A detective hunts rogue replicants in a dystopian future.",
-    },
-    {
-      name: "Star Wars",
-      url: "",
-      description:
-        "A group of rebels fights against an oppressive empire in a galaxy far, far away.",
-    },
-    {
-      name: "Inception",
-      url: "",
-      description:
-        "A skilled thief enters the dreams of others to steal secrets.",
-    },
-    {
-      name: "The Matrix",
-      url: "",
-      description:
-        "A hacker discovers the world he knows is a simulated reality.",
-    },
-    {
-      name: "Arrival",
-      url: "",
-      description:
-        "A linguist is tasked with communicating with alien visitors.",
-    },
-  ],
-  Romance: [
-    {
-      name: "Pride and Prejudice",
-      url: "",
-      description:
-        "A spirited young woman navigates love and societal expectations.",
-    },
-    {
-      name: "The Notebook",
-      url: "",
-      description: "A passionate love story unfolds across decades.",
-    },
-    {
-      name: "Titanic",
-      url: "",
-      description: "A forbidden romance develops aboard the ill-fated ship.",
-    },
-    {
-      name: "When Harry Met Sally",
-      url: "",
-      description:
-        "Two friends debate whether men and women can be just friends.",
-    },
-    {
-      name: "La La Land",
-      url: "",
-      description:
-        "A jazz musician and an aspiring actress pursue their dreams in Los Angeles.",
-    },
-  ],
-  Animation: [
-    {
-      name: "Toy Story",
-      url: "",
-      description:
-        "A cowboy doll is profoundly threatened by a new spaceman figure.",
-    },
-    {
-      name: "Finding Nemo",
-      url: "",
-      description:
-        "A clownfish embarks on a journey to find his missing son.",
-    },
-    {
-      name: "Spirited Away",
-      url: "",
-      description: "A girl navigates a mystical world to save her parents.",
-    },
-    {
-      name: "Shrek",
-      url: "",
-      description:
-        "An ogre's peaceful life is disrupted by fairy tale creatures.",
-    },
-    {
-      name: "Coco",
-      url: "",
-      description:
-        "A boy journeys into the Land of the Dead to uncover his family's history.",
-    },
-  ],
-  Documentary: [
-    {
-      name: "13th",
-      url: "",
-      description:
-        "Explores the history of racial inequality in the United States.",
-    },
-    {
-      name: "Blackfish",
-      url: "",
-      description: "Investigates the treatment of orcas in captivity.",
-    },
-    {
-      name: "Won't You Be My Neighbor?",
-      url: "",
-      description:
-        "A look at the life of beloved children's television host Fred Rogers.",
-    },
-    {
-      name: "Jiro Dreams of Sushi",
-      url: "",
-      description: "A renowned sushi chef strives for culinary perfection.",
-    },
-    {
-      name: "Making a Murderer",
-      url: "",
-      description:
-        "A true crime documentary about a man wrongfully convicted of a crime.",
-    },
-  ],
-};
+const movies = [
+  {
+    name: "Die Hard",
+    url: "",
+    description: "An NYPD officer battles terrorists in a Los Angeles skyscraper.",
+    release: 1988,
+    genre: "Action",
+  },
+  {
+    name: "Mad Max: Fury Road",
+    url: "",
+    description: "In a post-apocalyptic world, a warrior teams up with rebels to save a group of women.",
+    release: 2015,
+    genre: "Action",
+  },
+  {
+    name: "John Wick",
+    url: "",
+    description: "A retired hitman seeks vengeance against those who wronged him.",
+    release: 2014,
+    genre: "Action",
+  },
+  {
+    name: "The Dark Knight",
+    url: "",
+    description: "Batman faces the Joker, a criminal mastermind bent on chaos.",
+    release: 2008,
+    genre: "Action",
+  },
+  {
+    name: "Gladiator",
+    url: "",
+    description: "A betrayed Roman general seeks revenge against the corrupt emperor.",
+    release: 2000,
+    genre: "Action",
+  },
+  {
+    name: "Superbad",
+    url: "",
+    description: "Two high school friends navigate a wild night before graduation.",
+    release: 2007,
+    genre: "Comedy",
+  },
+  {
+    name: "The Hangover",
+    url: "",
+    description: "A bachelor party in Las Vegas goes horribly wrong after a night of partying.",
+    release: 2009,
+    genre: "Comedy",
+  },
+  {
+    name: "Bridesmaids",
+    url: "",
+    description: "A woman's life spirals out of control as she competes to be her best friend's maid of honor.",
+    release: 2011,
+    genre: "Comedy",
+  },
+  {
+    name: "Mean Girls",
+    url: "",
+    description: "A teenage girl navigates the social cliques of a new high school.",
+    release: 2004,
+    genre: "Comedy",
+  },
+  {
+    name: "Groundhog Day",
+    url: "",
+    description: "A weatherman relives the same day over and over until he gets it right.",
+    release: 1993,
+    genre: "Comedy",
+  },
+  {
+    name: "The Shawshank Redemption",
+    url: "",
+    description: "A man wrongfully imprisoned forms a friendship with a fellow inmate.",
+    release: 1994,
+    genre: "Drama",
+  },
+  {
+    name: "Forrest Gump",
+    url: "",
+    description: "A slow-witted man inadvertently influences major historical events.",
+    release: 1994,
+    genre: "Drama",
+  },
+  {
+    name: "Fight Club",
+    url: "",
+    description: "An insomniac office worker forms an underground fight club.",
+    release: 1999,
+    genre: "Drama",
+  },
+  {
+    name: "The Godfather",
+    url: "",
+    description: "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
+    release: 1972,
+    genre: "Drama",
+  },
+  {
+    name: "Pulp Fiction",
+    url: "",
+    description: "Interconnected stories of crime unfold in Los Angeles.",
+    release: 1994,
+    genre: "Drama",
+  },
+  {
+    name: "The Shining",
+    url: "",
+    description: "A family becomes winter caretakers of a haunted hotel.",
+    release: 1980,
+    genre: "Horror",
+  },
+  {
+    name: "Get Out",
+    url: "",
+    description: "A young Black man uncovers a disturbing secret while visiting his white girlfriend's family.",
+    release: 2017,
+    genre: "Horror",
+  },
+  {
+    name: "A Nightmare on Elm Street",
+    url: "",
+    description: "Teens are hunted in their dreams by a vengeful spirit.",
+    release: 1984,
+    genre: "Horror",
+  },
+  {
+    name: "The Babadook",
+    url: "",
+    description: "A mother and her son are haunted by a sinister presence from a storybook.",
+    release: 2014,
+    genre: "Horror",
+  },
+  {
+    name: "Hereditary",
+    url: "",
+    description: "A family uncovers dark secrets after the death of their secretive grandmother.",
+    release: 2018,
+    genre: "Horror",
+  },
+  {
+    name: "Blade Runner",
+    url: "",
+    description: "A detective hunts rogue replicants in a dystopian future.",
+    release: 1982,
+    genre: "SciFi",
+  },
+  {
+    name: "Star Wars",
+    url: "",
+    description: "A group of rebels fights against an oppressive empire in a galaxy far, far away.",
+    release: 1977,
+    genre: "SciFi",
+  },
+  {
+    name: "Inception",
+    url: "",
+    description: "A skilled thief enters the dreams of others to steal secrets.",
+    release: 2010,
+    genre: "SciFi",
+  },
+  {
+    name: "The Matrix",
+    url: "",
+    description: "A hacker discovers the world he knows is a simulated reality.",
+    release: 1999,
+    genre: "SciFi",
+  },
+  {
+    name: "Arrival",
+    url: "",
+    description: "A linguist is tasked with communicating with alien visitors.",
+    release: 2016,
+    genre: "SciFi",
+  },
+  {
+    name: "Pride and Prejudice",
+    url: "",
+    description: "A spirited young woman navigates love and societal expectations.",
+    release: 2005,
+    genre: "Romance",
+  },
+  {
+    name: "The Notebook",
+    url: "",
+    description: "A passionate love story unfolds across decades.",
+    release: 2004,
+    genre: "Romance",
+  },
+  {
+    name: "Titanic",
+    url: "",
+    description: "A forbidden romance develops aboard the ill-fated ship.",
+    release: 1997,
+    genre: "Romance",
+  },
+  {
+    name: "When Harry Met Sally",
+    url: "",
+    description: "Two friends debate whether men and women can be just friends.",
+    release: 1989,
+    genre: "Romance",
+  },
+  {
+    name: "La La Land",
+    url: "",
+    description: "A jazz musician and an aspiring actress pursue their dreams in Los Angeles.",
+    release: 2016,
+    genre: "Romance",
+  },
+  {
+    name: "Toy Story",
+    url: "",
+    description: "A cowboy doll is profoundly threatened by a new spaceman figure.",
+    release: 1995,
+    genre: "Animation",
+  },
+  {
+    name: "Finding Nemo",
+    url: "",
+    description: "A clownfish embarks on a journey to find his missing son.",
+    release: 2003,
+    genre: "Animation",
+  },
+  {
+    name: "Spirited Away",
+    url: "",
+    description: "A girl navigates a mystical world to save her parents.",
+    release: 2001,
+    genre: "Animation",
+  },
+  {
+    name: "Shrek",
+    url: "",
+    description: "An ogre's peaceful life is disrupted by fairy tale creatures.",
+    release: 2001,
+    genre: "Animation",
+  },
+  {
+    name: "Coco",
+    url: "",
+    description: "A boy journeys into the Land of the Dead to uncover his family's history.",
+    release: 2017,
+    genre: "Animation",
+  },
+  {
+    name: "13th",
+    url: "",
+    description: "Explores the history of racial inequality in the United States.",
+    release: 2016,
+    genre: "Documentary",
+  },
+  {
+    name: "Blackfish",
+    url: "",
+    description: "Investigates the treatment of orcas in captivity.",
+    release: 2013,
+    genre: "Documentary",
+  },
+  {
+    name: "Won't You Be My Neighbor?",
+    url: "",
+    description: "A look at the life of beloved children's television host Fred Rogers.",
+    release: 2018,
+    genre: "Documentary",
+  },
+  {
+    name: "Jiro Dreams of Sushi",
+    url: "",
+    description: "A renowned sushi chef strives for culinary perfection.",
+    release: 2011,
+    genre: "Documentary",
+  },
+  {
+    name: "Making a Murderer",
+    url: "",
+    description: "A true crime documentary about a man wrongfully convicted of a crime.",
+    release: 2015,
+    genre: "Documentary",
+  },
+];
 
-const shows = {
-  Sitcom: [
-    {
-      name: "Friends",
-      url: "",
-      description:
-        "A group of friends navigates life and love in New York City.",
-    },
-    {
-      name: "The Office",
-      url: "",
-      description:
-        "A mockumentary about the daily lives of office employees.",
-    },
-    {
-      name: "Parks and Recreation",
-      url: "",
-      description:
-        "A quirky department in a small town manages local government.",
-    },
-    {
-      name: "Brooklyn Nine-Nine",
-      url: "",
-      description:
-        "A team of detectives solves crimes in a New York precinct.",
-    },
-    {
-      name: "How I Met Your Mother",
-      url: "",
-      description:
-        "A man recounts the story of how he met the mother of his children.",
-    },
-  ],
-  DramaSeries: [
-    {
-      name: "Breaking Bad",
-      url: "",
-      description:
-        "A chemistry teacher turns to cooking meth after a cancer diagnosis.",
-    },
-    {
-      name: "The Crown",
-      url: "",
-      description:
-        "The reign of Queen Elizabeth II is chronicled over decades.",
-    },
-    {
-      name: "Game of Thrones",
-      url: "",
-      description: "Noble families vie for power in a mythical land.",
-    },
-    {
-      name: "The Handmaid's Tale",
-      url: "",
-      description:
-        "A woman is forced into childbearing servitude in a dystopian society.",
-    },
-    {
-      name: "The Sopranos",
-      url: "",
-      description:
-        "A mob boss struggles to manage his family and criminal organization.",
-    },
-  ],
-  RealityTV: [
-    {
-      name: "Survivor",
-      url: "",
-      description:
-        "Contestants are stranded in remote locations and compete for survival.",
-    },
-    {
-      name: "The Amazing Race",
-      url: "",
-      description:
-        "Teams race around the world, completing challenges in various countries.",
-    },
-    {
-      name: "The Bachelor",
-      url: "",
-      description:
-        "A single man dates multiple women to find his future wife.",
-    },
-    {
-      name: "Big Brother",
-      url: "",
-      description:
-        "Houseguests live together while competing for a cash prize.",
-    },
-    {
-      name: "RuPaul's Drag Race",
-      url: "",
-      description:
-        "Drag queens compete in various challenges to be crowned America's Next Drag Superstar.",
-    },
-  ],
-  Thriller: [
-    {
-      name: "Mindhunter",
-      url: "",
-      description:
-        "FBI agents interview serial killers to understand their psychology.",
-    },
-    {
-      name: "Killing Eve",
-      url: "",
-      description:
-        "An intelligence investigator becomes obsessed with a skilled assassin.",
-    },
-    {
-      name: "True Detective",
-      url: "",
-      description: "Detectives investigate complex and disturbing crimes.",
-    },
-    {
-      name: "The Sinner",
-      url: "",
-      description:
-        "A detective investigates the motivations behind shocking crimes.",
-    },
-    {
-      name: "Ozark",
-      url: "",
-      description:
-        "A financial planner relocates his family to launder money for a drug cartel.",
-    },
-  ],
-  Fantasy: [
-    {
-      name: "Game of Thrones",
-      url: "",
-      description: "Noble families vie for power in a mythical land.",
-    },
-    {
-      name: "The Witcher",
-      url: "",
-      description:
-        "A monster hunter navigates a world of magic and political intrigue.",
-    },
-    {
-      name: "Shadow and Bone",
-      url: "",
-      description:
-        "A young soldier discovers a power that could unite her war-torn world.",
-    },
-    {
-      name: "His Dark Materials",
-      url: "",
-      description:
-        "A girl journeys through parallel universes to save kidnapped children.",
-    },
-    {
-      name: "The Mandalorian",
-      url: "",
-      description:
-        "A lone bounty hunter navigates the outer reaches of the galaxy.",
-    },
-  ],
-  Mystery: [
-    {
-      name: "Sherlock",
-      url: "",
-      description:
-        "A modern update of Sherlock Holmes' detective adventures.",
-    },
-    {
-      name: "True Detective",
-      url: "",
-      description: "Detectives investigate complex and disturbing crimes.",
-    },
-    {
-      name: "Broadchurch",
-      url: "",
-      description: "A small town is rocked by the murder of a young boy.",
-    },
-    {
-      name: "The Killing",
-      url: "",
-      description: "A Seattle detective investigates a young girl's murder.",
-    },
-    {
-      name: "The Sinner",
-      url: "",
-      description:
-        "A detective investigates the motivations behind shocking crimes.",
-    },
-  ],
-  TalkShow: [
-    {
-      name: "The Tonight Show Starring Jimmy Fallon",
-      url: "",
-      description:
-        "A late-night talk show featuring celebrity interviews and games.",
-    },
-    {
-      name: "The Late Show with Stephen Colbert",
-      url: "",
-      description:
-        "A comedic take on current events and interviews with celebrities.",
-    },
-    {
-      name: "The Ellen DeGeneres Show",
-      url: "",
-      description: "Ellen hosts celebrity guests and showcases viral videos.",
-    },
-    {
-      name: "Jimmy Kimmel Live!",
-      url: "",
-      description:
-        "A late-night talk show featuring comedy sketches and interviews.",
-    },
-    {
-      name: "The Daily Show",
-      url: "",
-      description:
-        "A satirical news program covering current events and politics.",
-    },
-  ],
-};
+const shows = [
+  {
+    name: "Friends",
+    url: "",
+    description: "A group of friends navigates life and love in New York City.",
+    running: "1994 - 2004",
+    genre: "Sitcom",
+  },
+  {
+    name: "The Office",
+    url: "",
+    description: "A mockumentary about the daily lives of office employees.",
+    running: "2005 - 2013",
+    genre: "Sitcom",
+  },
+  {
+    name: "Parks and Recreation",
+    url: "",
+    description: "A quirky department in a small town manages local government.",
+    running: "2009 - 2015",
+    genre: "Sitcom",
+  },
+  {
+    name: "Brooklyn Nine-Nine",
+    url: "",
+    description: "A team of detectives solves crimes in a New York precinct.",
+    running: "2013 - 2021",
+    genre: "Sitcom",
+  },
+  {
+    name: "How I Met Your Mother",
+    url: "",
+    description: "A man recounts the story of how he met the mother of his children.",
+    running: "2005 - 2014",
+    genre: "Sitcom",
+  },
+  {
+    name: "Breaking Bad",
+    url: "",
+    description: "A chemistry teacher turns to cooking meth after a cancer diagnosis.",
+    running: "2008 - 2013",
+    genre: "DramaSeries",
+  },
+  {
+    name: "The Crown",
+    url: "",
+    description: "The reign of Queen Elizabeth II is chronicled over decades.",
+    running: "2016 - Present",
+    genre: "DramaSeries",
+  },
+  {
+    name: "Game of Thrones",
+    url: "",
+    description: "Noble families vie for power in a mythical land.",
+    running: "2011 - 2019",
+    genre: "DramaSeries",
+  },
+  {
+    name: "The Handmaid's Tale",
+    url: "",
+    description: "A woman is forced into childbearing servitude in a dystopian society.",
+    running: "2017 - Present",
+    genre: "DramaSeries",
+  },
+  {
+    name: "The Sopranos",
+    url: "",
+    description: "A mob boss struggles to manage his family and criminal organization.",
+    running: "1999 - 2007",
+    genre: "DramaSeries",
+  },
+  {
+    name: "Survivor",
+    url: "",
+    description: "Contestants are stranded in remote locations and compete for survival.",
+    running: "2000 - Present",
+    genre: "RealityTV",
+  },
+  {
+    name: "The Amazing Race",
+    url: "",
+    description: "Teams race around the world, completing challenges in various countries.",
+    running: "2001 - Present",
+    genre: "RealityTV",
+  },
+  {
+    name: "The Bachelor",
+    url: "",
+    description: "A single man dates multiple women to find his future wife.",
+    running: "2002 - Present",
+    genre: "RealityTV",
+  },
+  {
+    name: "Big Brother",
+    url: "",
+    description: "Houseguests live together while competing for a cash prize.",
+    running: "2000 - Present",
+    genre: "RealityTV",
+  },
+  {
+    name: "RuPaul's Drag Race",
+    url: "",
+    description: "Drag queens compete in various challenges to be crowned America's Next Drag Superstar.",
+    running: "2009 - Present",
+    genre: "RealityTV",
+  },
+  {
+    name: "Mindhunter",
+    url: "",
+    description: "FBI agents interview serial killers to understand their psychology.",
+    running: "2017 - 2019",
+    genre: "Thriller",
+  },
+  {
+    name: "Killing Eve",
+    url: "",
+    description: "An intelligence investigator becomes obsessed with a skilled assassin.",
+    running: "2018 - 2022",
+    genre: "Thriller",
+  },
+  {
+    name: "True Detective",
+    url: "",
+    description: "Detectives investigate complex and disturbing crimes.",
+    running: "2014 - Present",
+    genre: "Thriller",
+  },
+  {
+    name: "The Sinner",
+    url: "",
+    description: "A detective investigates the motivations behind shocking crimes.",
+    running: "2017 - 2021",
+    genre: "Thriller",
+  },
+  {
+    name: "Ozark",
+    url: "",
+    description: "A financial planner relocates his family to launder money for a drug cartel.",
+    running: "2017 - 2022",
+    genre: "Thriller",
+  },
+  {
+    name: "Game of Thrones",
+    url: "",
+    description: "Noble families vie for power in a mythical land.",
+    running: "2011 - 2019",
+    genre: "Fantasy",
+  },
+  {
+    name: "The Witcher",
+    url: "",
+    description: "A monster hunter navigates a world of magic and political intrigue.",
+    running: "2019 - Present",
+    genre: "Fantasy",
+  },
+  {
+    name: "Shadow and Bone",
+    url: "",
+    description: "A young soldier discovers a power that could unite her war-torn world.",
+    running: "2021 - Present",
+    genre: "Fantasy",
+  },
+  {
+    name: "His Dark Materials",
+    url: "",
+    description: "A girl journeys through parallel universes to save kidnapped children.",
+    running: "2019 - 2022",
+    genre: "Fantasy",
+  },
+  {
+    name: "The Mandalorian",
+    url: "",
+    description: "A lone bounty hunter navigates the outer reaches of the galaxy.",
+    running: "2019 - Present",
+    genre: "Fantasy",
+  },
+  {
+    name: "Sherlock",
+    url: "",
+    description: "A modern update of Sherlock Holmes' detective adventures.",
+    running: "2010 - 2017",
+    genre: "Mystery",
+  },
+  {
+    name: "True Detective",
+    url: "",
+    description: "Detectives investigate complex and disturbing crimes.",
+    running: "2014 - Present",
+    genre: "Mystery",
+  },
+  {
+    name: "Broadchurch",
+    url: "",
+    description: "A small town is rocked by the murder of a young boy.",
+    running: "2013 - 2017",
+    genre: "Mystery",
+  },
+  {
+    name: "The Killing",
+    url: "",
+    description: "A Seattle detective investigates a young girl's murder.",
+    running: "2011 - 2014",
+    genre: "Mystery",
+  },
+  {
+    name: "The Sinner",
+    url: "",
+    description: "A detective investigates the motivations behind shocking crimes.",
+    running: "2017 - 2021",
+    genre: "Mystery",
+  },
+  {
+    name: "The Tonight Show Starring Jimmy Fallon",
+    url: "",
+    description: "A late-night talk show featuring celebrity interviews and games.",
+    running: "2014 - Present",
+    genre: "TalkShow",
+  },
+  {
+    name: "The Late Show with Stephen Colbert",
+    url: "",
+    description: "A comedic take on current events and interviews with celebrities.",
+    running: "2015 - Present",
+    genre: "TalkShow",
+  },
+  {
+    name: "The Ellen DeGeneres Show",
+    url: "",
+    description: "Ellen hosts celebrity guests and showcases viral videos.",
+    running: "2003 - 2022",
+    genre: "TalkShow",
+  },
+  {
+    name: "Jimmy Kimmel Live!",
+    url: "",
+    description: "A late-night talk show featuring comedy sketches and interviews.",
+    running: "2003 - Present",
+    genre: "TalkShow",
+  },
+  {
+    name: "The Daily Show",
+    url: "",
+    description: "A satirical news program covering current events and politics.",
+    running: "1996 - Present",
+    genre: "TalkShow",
+  },
+];
   
-const documentaries = {
-  Nature: [
-    {
-      name: "Planet Earth",
-      url: "",
-      description: "An exploration of Earth's diverse natural environments.",
-    },
-    {
-      name: "Our Planet",
-      url: "",
-      description:
-        "A documentary highlighting the beauty of nature and the impact of climate change.",
-    },
-    {
-      name: "The Blue Planet",
-      url: "",
-      description: "A deep dive into the world's oceans and marine life.",
-    },
-    {
-      name: "Cosmos: A Spacetime Odyssey",
-      url: "",
-      description: "A journey through space and time exploring the universe.",
-    },
-    {
-      name: "March of the Penguins",
-      url: "",
-      description:
-        "A documentary following the migration of emperor penguins.",
-    },
-  ],
-  History: [
-    {
-      name: "The Civil War",
-      url: "",
-      description: "A comprehensive look at the American Civil War.",
-    },
-    {
-      name: "Ken Burns: The Vietnam War",
-      url: "",
-      description:
-        "An in-depth exploration of the Vietnam War's history and impact.",
-    },
-    {
-      name: "13th",
-      url: "",
-      description:
-        "Explores the history of racial inequality in the United States.",
-    },
-    {
-      name: "The Act of Killing",
-      url: "",
-      description:
-        "Former Indonesian death squad leaders reenact their crimes.",
-    },
-    {
-      name: "Inside the Vatican",
-      url: "",
-      description:
-        "A look inside the Vatican and its role in the Catholic Church.",
-    },
-  ],
-  TrueCrime: [
-    {
-      name: "Making a Murderer",
-      url: "",
-      description:
-        "A true crime documentary about a man wrongfully convicted of a crime.",
-    },
-    {
-      name: "The Jinx",
-      url: "",
-      description:
-        "A look at the life of a real estate heir suspected of murder.",
-    },
-    {
-      name: "Wild Wild Country",
-      url: "",
-      description:
-        "The rise and fall of a controversial Indian guru in Oregon.",
-    },
-    {
-      name: "The Keepers",
-      url: "",
-      description:
-        "Investigating the unsolved murder of a nun and its connection to abuse.",
-    },
-    {
-      name: "Evil Genius",
-      url: "",
-      description: "A bizarre bank heist leads to a murder investigation.",
-    },
-  ],
-  Science: [
-    {
-      name: "Cosmos: A Spacetime Odyssey",
-      url: "",
-      description: "A journey through space and time exploring the universe.",
-    },
-    {
-      name: "The Universe",
-      url: "",
-      description: "Exploring the wonders and mysteries of our universe.",
-    },
-    {
-      name: "The Planets",
-      url: "",
-      description:
-        "A documentary series exploring the planets in our solar system.",
-    },
-    {
-      name: "Brain Games",
-      url: "",
-      description: "A show that explores the science of how our brains work.",
-    },
-    {
-      name: "Our Planet",
-      url: "",
-      description:
-        "A documentary highlighting the beauty of nature and the impact of climate change.",
-    },
-  ],
-  Biography: [
-    {
-      name: "Won't You Be My Neighbor?",
-      url: "",
-      description:
-        "A look at the life of beloved children's television host Fred Rogers.",
-    },
-    {
-      name: "Jiro Dreams of Sushi",
-      url: "",
-      description: "A renowned sushi chef strives for culinary perfection.",
-    },
-    {
-      name: "Amy",
-      url: "",
-      description:
-        "A portrait of the life and career of singer Amy Winehouse.",
-    },
-    {
-      name: "Exit Through the Gift Shop",
-      url: "",
-      description: "An amateur filmmaker documents the world of street art.",
-    },
-    {
-      name: "RBG",
-      url: "",
-      description:
-        "A documentary about Supreme Court Justice Ruth Bader Ginsburg.",
-    },
-  ],
-};
+const documentaries = [
+  {
+    name: "Planet Earth",
+    url: "",
+    description: "An exploration of Earth's diverse natural environments.",
+    release: 2006,
+    genre: "Nature",
+  },
+  {
+    name: "Our Planet",
+    url: "",
+    description: "A documentary highlighting the beauty of nature and the impact of climate change.",
+    release: 2019,
+    genre: "Nature",
+  },
+  {
+    name: "The Blue Planet",
+    url: "",
+    description: "A deep dive into the world's oceans and marine life.",
+    release: 2001,
+    genre: "Nature",
+  },
+  {
+    name: "Cosmos: A Spacetime Odyssey",
+    url: "",
+    description: "A journey through space and time exploring the universe.",
+    release: 2014,
+    genre: "Nature",
+  },
+  {
+    name: "March of the Penguins",
+    url: "",
+    description: "A documentary following the migration of emperor penguins.",
+    release: 2005,
+    genre: "Nature",
+  },
+  {
+    name: "The Civil War",
+    url: "",
+    description: "A comprehensive look at the American Civil War.",
+    release: 1990,
+    genre: "History",
+  },
+  {
+    name: "Ken Burns: The Vietnam War",
+    url: "",
+    description: "An in-depth exploration of the Vietnam War's history and impact.",
+    release: 2017,
+    genre: "History",
+  },
+  {
+    name: "13th",
+    url: "",
+    description: "Explores the history of racial inequality in the United States.",
+    release: 2016,
+    genre: "History",
+  },
+  {
+    name: "The Act of Killing",
+    url: "",
+    description: "Former Indonesian death squad leaders reenact their crimes.",
+    release: 2012,
+    genre: "History",
+  },
+  {
+    name: "Inside the Vatican",
+    url: "",
+    description: "A look inside the Vatican and its role in the Catholic Church.",
+    release: 2019,
+    genre: "History",
+  },
+  {
+    name: "Making a Murderer",
+    url: "",
+    description: "A true crime documentary about a man wrongfully convicted of a crime.",
+    release: 2015,
+    genre: "TrueCrime",
+  },
+  {
+    name: "The Jinx",
+    url: "",
+    description: "A look at the life of a real estate heir suspected of murder.",
+    release: 2015,
+    genre: "TrueCrime",
+  },
+  {
+    name: "Wild Wild Country",
+    url: "",
+    description: "The rise and fall of a controversial Indian guru in Oregon.",
+    release: 2018,
+    genre: "TrueCrime",
+  },
+  {
+    name: "The Keepers",
+    url: "",
+    description: "Investigating the unsolved murder of a nun and its connection to abuse.",
+    release: 2017,
+    genre: "TrueCrime",
+  },
+  {
+    name: "Evil Genius",
+    url: "",
+    description: "A bizarre bank heist leads to a murder investigation.",
+    release: 2018,
+    genre: "TrueCrime",
+  },
+  {
+    name: "Cosmos: A Spacetime Odyssey",
+    url: "",
+    description: "A journey through space and time exploring the universe.",
+    release: 2014,
+    genre: "Science",
+  },
+  {
+    name: "The Universe",
+    url: "",
+    description: "Exploring the wonders and mysteries of our universe.",
+    release: 2007,
+    genre: "Science",
+  },
+  {
+    name: "The Planets",
+    url: "",
+    description: "A documentary series exploring the planets in our solar system.",
+    release: 2019,
+    genre: "Science",
+  },
+  {
+    name: "Brain Games",
+    url: "",
+    description: "A show that explores the science of how our brains work.",
+    release: 2013,
+    genre: "Science",
+  },
+  {
+    name: "Our Planet",
+    url: "",
+    description: "A documentary highlighting the beauty of nature and the impact of climate change.",
+    release: 2019,
+    genre: "Science",
+  },
+  {
+    name: "Won't You Be My Neighbor?",
+    url: "",
+    description: "A look at the life of beloved children's television host Fred Rogers.",
+    release: 2018,
+    genre: "Biography",
+  },
+  {
+    name: "Jiro Dreams of Sushi",
+    url: "",
+    description: "A renowned sushi chef strives for culinary perfection.",
+    release: 2011,
+    genre: "Biography",
+  },
+  {
+    name: "Amy",
+    url: "",
+    description: "A portrait of the life and career of singer Amy Winehouse.",
+    release: 2015,
+    genre: "Biography",
+  },
+  {
+    name: "Exit Through the Gift Shop",
+    url: "",
+    description: "An amateur filmmaker documents the world of street art.",
+    release: 2010,
+    genre: "Biography",
+  },
+  {
+    name: "RBG",
+    url: "",
+    description: "A documentary about Supreme Court Justice Ruth Bader Ginsburg.",
+    release: 2018,
+    genre: "Biography",
+  },
+];
 
-const podcasts = {
-  TrueCrime: [
-    {
-      name: "Serial",
-      url: "",
-      description: "Investigating a 1999 murder case over multiple seasons.",
-    },
-    {
-      name: "My Favorite Murder",
-      url: "",
-      description: "A comedic take on true crime stories and events.",
-    },
-    {
-      name: "Criminal",
-      url: "",
-      description:
-        "Stories of people who've done wrong and those who have been wronged.",
-    },
-    {
-      name: "Casefile",
-      url: "",
-      description: "An Australian podcast detailing true crime cases.",
-    },
-    {
-      name: "Sword and Scale",
-      url: "",
-      description:
-        "Exploring the dark side of humanity and true crime stories.",
-    },
-  ],
-  Comedy: [
-    {
-      name: "The Joe Rogan Experience",
-      url: "",
-      description: "A long-form conversation with celebrities and experts.",
-    },
-    {
-      name: "Conan O'Brien Needs A Friend",
-      url: "",
-      description: "Conan interviews celebrities he admires.",
-    },
-    {
-      name: "My Dad Wrote A Porno",
-      url: "",
-      description: "A comedic reading of a poorly written erotic novel.",
-    },
-    {
-      name: "How Did This Get Made?",
-      url: "",
-      description: "A comedic take on bad movies with guest appearances.",
-    },
-    {
-      name: "Wait, Wait, Don't Tell Me!",
-      url: "",
-      description: "A humorous take on the week's news in quiz format.",
-    },
-  ],
-  Business: [
-    {
-      name: "How I Built This",
-      url: "",
-      description:
-        "Stories behind the people who created successful companies.",
-    },
-    {
-      name: "The Tim Ferriss Show",
-      url: "",
-      description:
-        "Interviews with high performers to discover their secrets.",
-    },
-    {
-      name: "The Indicator from Planet Money",
-      url: "",
-      description:
-        "Short episodes explaining business and economic concepts.",
-    },
-    {
-      name: "Masters of Scale",
-      url: "",
-      description: "Founders share their stories of scaling companies.",
-    },
-    {
-      name: "WorkLife with Adam Grant",
-      url: "",
-      description: "Exploring how to make work not suck.",
-    },
-  ],
-  Technology: [
-    {
-      name: "Reply All",
-      url: "",
-      description: "Stories about how people shape the internet.",
-    },
-    {
-      name: "The Vergecast",
-      url: "",
-      description: "A weekly show discussing the latest in technology.",
-    },
-    {
-      name: "Wired Tech in Two",
-      url: "",
-      description: "A quick summary of the latest technology news.",
-    },
-    {
-      name: "Accidental Tech Podcast",
-      url: "",
-      description: "A discussion about tech and software development.",
-    },
-    {
-      name: "StartUp Podcast",
-      url: "",
-      description: "A look at what it's really like to start a business.",
-    },
-  ],
-  Society: [
-    {
-      name: "Hidden Brain",
-      url: "",
-      description:
-        "Exploring the unconscious patterns that drive human behavior.",
-    },
-    {
-      name: "TED Radio Hour",
-      url: "",
-      description: "A journey through fascinating ideas and TED talks.",
-    },
-    {
-      name: "Freakonomics Radio",
-      url: "",
-      description: "Exploring the hidden side of everything with economics.",
-    },
-    {
-      name: "Philosophize This!",
-      url: "",
-      description:
-        "An accessible introduction to various philosophical ideas.",
-    },
-    {
-      name: "The Happiness Lab",
-      url: "",
-      description: "Exploring the science of happiness and well-being.",
-    },
-  ],
-};
+const podcasts = [
+  {
+    name: "Serial",
+    url: "",
+    description: "Investigating a 1999 murder case over multiple seasons.",
+    running: "2014 - Present",
+    genre: "TrueCrime",
+  },
+  {
+    name: "My Favorite Murder",
+    url: "",
+    description: "A comedic take on true crime stories and events.",
+    running: "2016 - Present",
+    genre: "TrueCrime",
+  },
+  {
+    name: "Criminal",
+    url: "",
+    description: "Stories of people who've done wrong and those who have been wronged.",
+    running: "2014 - Present",
+    genre: "TrueCrime",
+  },
+  {
+    name: "Casefile",
+    url: "",
+    description: "An Australian podcast detailing true crime cases.",
+    running: "2016 - Present",
+    genre: "TrueCrime",
+  },
+  {
+    name: "Sword and Scale",
+    url: "",
+    description: "Exploring the dark side of humanity and true crime stories.",
+    running: "2014 - Present",
+    genre: "TrueCrime",
+  },
+  {
+    name: "The Joe Rogan Experience",
+    url: "",
+    description: "A long-form conversation with celebrities and experts.",
+    running: "2009 - Present",
+    genre: "Comedy",
+  },
+  {
+    name: "Conan O'Brien Needs A Friend",
+    url: "",
+    description: "Conan interviews celebrities he admires.",
+    running: "2018 - Present",
+    genre: "Comedy",
+  },
+  {
+    name: "My Dad Wrote A Porno",
+    url: "",
+    description: "A comedic reading of a poorly written erotic novel.",
+    running: "2015 - Present",
+    genre: "Comedy",
+  },
+  {
+    name: "How Did This Get Made?",
+    url: "",
+    description: "A comedic take on bad movies with guest appearances.",
+    running: "2010 - Present",
+    genre: "Comedy",
+  },
+  {
+    name: "Wait, Wait, Don't Tell Me!",
+    url: "",
+    description: "A humorous take on the week's news in quiz format.",
+    running: "1998 - Present",
+    genre: "Comedy",
+  },
+  {
+    name: "How I Built This",
+    url: "",
+    description: "Stories behind the people who created successful companies.",
+    running: "2016 - Present",
+    genre: "Business",
+  },
+  {
+    name: "The Tim Ferriss Show",
+    url: "",
+    description: "Interviews with high performers to discover their secrets.",
+    running: "2014 - Present",
+    genre: "Business",
+  },
+  {
+    name: "The Indicator from Planet Money",
+    url: "",
+    description: "Short episodes explaining business and economic concepts.",
+    running: "2017 - Present",
+    genre: "Business",
+  },
+  {
+    name: "Masters of Scale",
+    url: "",
+    description: "Founders share their stories of scaling companies.",
+    running: "2017 - Present",
+    genre: "Business",
+  },
+  {
+    name: "WorkLife with Adam Grant",
+    url: "",
+    description: "Exploring how to make work not suck.",
+    running: "2018 - Present",
+    genre: "Business",
+  },
+  {
+    name: "Reply All",
+    url: "",
+    description: "Stories about how people shape the internet.",
+    running: "2014 - 2020",
+    genre: "Technology",
+  },
+  {
+    name: "The Vergecast",
+    url: "",
+    description: "A weekly show discussing the latest in technology.",
+    running: "2014 - Present",
+    genre: "Technology",
+  },
+  {
+    name: "Wired Tech in Two",
+    url: "",
+    description: "A quick summary of the latest technology news.",
+    running: "2019 - Present",
+    genre: "Technology",
+  },
+  {
+    name: "Accidental Tech Podcast",
+    url: "",
+    description: "A discussion about tech and software development.",
+    running: "2013 - Present",
+    genre: "Technology",
+  },
+  {
+    name: "StartUp Podcast",
+    url: "",
+    description: "A look at what it's really like to start a business.",
+    running: "2014 - Present",
+    genre: "Technology",
+  },
+  {
+    name: "Hidden Brain",
+    url: "",
+    description: "Exploring the unconscious patterns that drive human behavior.",
+    running: "2015 - Present",
+    genre: "Society",
+  },
+  {
+    name: "TED Radio Hour",
+    url: "",
+    description: "A journey through fascinating ideas and TED talks.",
+    running: "2013 - Present",
+    genre: "Society",
+  },
+  {
+    name: "Freakonomics Radio",
+    url: "",
+    description: "Exploring the hidden side of everything with economics.",
+    running: "2010 - Present",
+    genre: "Society",
+  },
+  {
+    name: "Philosophize This!",
+    url: "",
+    description: "An accessible introduction to various philosophical ideas.",
+    running: "2013 - Present",
+    genre: "Society",
+  },
+  {
+    name: "The Happiness Lab",
+    url: "",
+    description: "Exploring the science of happiness and well-being.",
+    running: "2019 - Present",
+    genre: "Society",
+  },
+];
 
 export {movies, shows, documentaries, podcasts};
