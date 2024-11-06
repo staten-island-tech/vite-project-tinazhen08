@@ -2,22 +2,33 @@ import "../css/style.css";
 import { DOMSelector } from "./dom";
 import { movies, shows, documentaries, podcasts } from "./media";
 
-function card(x, y, z, d) {
-  return `<div class="card">
-            <h2 class="card-header">${x}</h2>
-            <img src="${y}" alt="" class="card-img"></img>
-            <h4 class="description">${d}</h4>
-            <h4 class="release">${z}</h4>
-            </div>`;
+function card(x) {
+  x.forEach((item)=>
+    DOMSelector.container.insertAdjacentHTML(
+      'beforeend',
+      `<div class="card">
+            <h2 class="card-header">${item.name}</h2>
+            <img src="${item.url}" alt="" class="card-img"></img>
+            <h4 class="description">${item.description}</h4>
+            <h4 class="release">${item.release}</h4>
+            </div>`
+    ))
 }
 
-function addCard(c) {
-  DOMSelector.container.insertAdjacentHTML("beforeend", c);
+function Movies(){
+  card(movies);
+
+  DOMSelector.form.insertAdjacentHTML(
+    'beforeend',
+    
+  )
 }
 
-DOMSelector.form.addEventListener("m", function (event) {
-  event.preventDefault();
-  movies.forEach((movie) => {
-    addCard(card(movie.name, movie.url, movie.release, movie.description));
-  });
-});
+function All(){
+  card(movies);
+  card(shows);
+  card(documentaries);
+  card(podcasts);
+}
+
+All();
