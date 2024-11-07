@@ -16,19 +16,38 @@ function card(x) {
 }
 
 function Movies(){
-  card(movies);
+  DOMSelector.form.addEventListener("submit", function (event) {
+    //Remove old cards from screen
+    document.querySelector(".container").innerHTML = "";
+    event.preventDefault();
+  
+    card(movies);
+  });
+}
 
-  DOMSelector.form.insertAdjacentHTML(
-    'beforeend',
-    
-  )
+function Shows(){
+  DOMSelector.form.addEventListener("submit", function (event) {
+    //Remove old cards from screen
+    document.querySelector(".container").innerHTML = "";
+    event.preventDefault();
+  
+    card(shows);
+  });
 }
 
 function All(){
-  card(movies);
-  card(shows);
-  card(documentaries);
-  card(podcasts);
-}
+  DOMSelector.form.addEventListener("submit", function (event) {
+    //Remove old cards from screen
+    document.querySelector(".container").innerHTML = "";
+    event.preventDefault();
+  
+    card(movies);
+    card(shows);
+    card(documentaries);
+    card(podcasts);
+  });
+};
 
+Movies();
+Shows();
 All();

@@ -5,6 +5,7 @@ const DOMSelector = {
     docBtn: document.querySelector(".documentaries"),
     podBtn: document.querySelector(".podcasts"),
     allBtn: document.querySelector(".all"),
+    form: document.querySelector(".form"),
 };
 
 export {DOMSelector};
