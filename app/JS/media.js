@@ -244,41 +244,6 @@ const movies = [
     release: 2017,
     genre: "Animation",
   },
-  {
-    name: "13th",
-    url: "",
-    description: "Explores the history of racial inequality in the United States.",
-    release: 2016,
-    genre: "Documentary",
-  },
-  {
-    name: "Blackfish",
-    url: "",
-    description: "Investigates the treatment of orcas in captivity.",
-    release: 2013,
-    genre: "Documentary",
-  },
-  {
-    name: "Won't You Be My Neighbor?",
-    url: "",
-    description: "A look at the life of beloved children's television host Fred Rogers.",
-    release: 2018,
-    genre: "Documentary",
-  },
-  {
-    name: "Jiro Dreams of Sushi",
-    url: "",
-    description: "A renowned sushi chef strives for culinary perfection.",
-    release: 2011,
-    genre: "Documentary",
-  },
-  {
-    name: "Making a Murderer",
-    url: "",
-    description: "A true crime documentary about a man wrongfully convicted of a crime.",
-    release: 2015,
-    genre: "Documentary",
-  },
 ];
 
 const shows = [
