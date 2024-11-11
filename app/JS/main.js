@@ -1,6 +1,6 @@
 import "../css/style.css";
 import { DOMSelector } from "./dom";
-import { movies, shows, documentaries, podcasts } from "./media";
+import { movies, shows, documentaries, podcasts } from "./Products";
 
 function card(x) {
   x.forEach((item) =>
@@ -16,14 +16,23 @@ function card(x) {
   );
 }
 
-function Movies()
 function media(){
-  DOMSelector.form.addEventListener("click", function (event) {
+  DOMSelector.buttons.addEventListener("click", function (event) {
     event.preventDefault();
     DOMSelector.container.innerHTML = ""; // Clear previous cards
 
     if (event.target.classList.contains("movies")) {
       card(movies);
+
+      DOMSelector.buttons.insertAdjacentHTML(
+        'beforeend', `<button class="action">Action</button>
+        <button class="comedy">Comedy</button>
+        <button class="action">Action</button>
+        <button class="horror">Horror</button>
+        <button class="scifi">SciFi</button>
+        <button class="romance">Romance</button>
+        <button class="animation">Animation</button>`
+      )
     } else if (event.target.classList.contains("shows")) {
       card(shows);
     } else if (event.target.classList.contains("documentaries")) {
