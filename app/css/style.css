@@ -8,8 +8,10 @@ body,
 }
 
 :root {
-  --primary: var(rgb(67, 62, 62));
-  --secondary: var(white);
+  --dark-gray:rgb(67, 62, 62);
+
+  --primary: var(white);
+  --secondary: var(--dark-gray);
   --font-color: #001010; 
 
   --h1: 5.61rem;
@@ -24,7 +26,7 @@ h1{
 }
 
 body {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .warm {
@@ -51,7 +53,7 @@ body {
 .podcasts,
 .all{
   font-size: var(--h2);
-  color: var(--primary);
+  background-color: var(--primary);
 }
 
 .action,
@@ -62,7 +64,7 @@ body {
 .romance,
 .animation{
   font-size: var(--h3);
-  color: var(--primary);
+  background-color: var(--primary);
 }
 
 .card {
@@ -104,4 +106,8 @@ body {
   font: 1rem;
   margin: 1rem;
   color: white;
+}
+
+.price{
+  color: var(--primary);
 }
