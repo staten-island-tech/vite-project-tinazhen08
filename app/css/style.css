@@ -8,14 +8,8 @@ body,
 }
 
 :root {
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-
-  --primary: var(var(--light-blue));
-  --secondary: var(var(--dark-blue));
+  --primary: var(rgb(67, 62, 62));
+  --secondary: var(white);
   --font-color: #001010; 
 
   --h1: 5.61rem;
@@ -68,6 +62,7 @@ body {
 .romance,
 .animation{
   font-size: var(--h3);
+  color: var(--primary);
 }
 
 .card {
