@@ -18,11 +18,12 @@ body,
   --secondary: var(var(--dark-blue));
   --font-color: #001010; 
 
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
+  --h1: 5.61rem;
+  --h2: 4.209rem;
+  --h3: 3.157rem;
+  --h4: 2.369rem;
+  --h5: 1.777rem;
+  --h6: 1.333rem;
 }
 h1{
   font-size: var(--h1);
@@ -40,12 +41,33 @@ body {
   --primary: var(--light-blue);
 }
 
-.container {
+.container,
+.buttons,
+.genres {
   margin: 2rem auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.movies,
+.shows,
+.documentaries,
+.podcasts,
+.all{
+  font-size: var(--h2);
+  color: var(--primary);
+}
+
+.action,
+.comedy,
+.drama,
+.horror,
+.scifi,
+.romance,
+.animation{
+  font-size: var(--h3);
 }
 
 .card {
