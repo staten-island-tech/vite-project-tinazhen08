@@ -1,7 +1,7 @@
 const movies = [
   {
     name: "Die Hard",
-    url: "img/movieIMG/diehard.jpg",
+    url: "imgs/movieIMG/diehard.jpg",
     description: "An NYPD officer battles terrorists in a Los Angeles skyscraper.",
     release: 1988,
     price: 9.99,
@@ -284,7 +284,7 @@ const movies = [
 const shows = [
   {
     name: "Friends",
-    url: "img/shows/friends.jpg",
+    url: "imgs/shows/friends.jpg",
     description: "A group of friends navigates life and love in New York City.",
     release: "1994 - 2004",
     price: 12.99,
@@ -567,7 +567,7 @@ const shows = [
 const documentaries = [
   {
     name: "Planet Earth",
-    url: "img/documentaries/planetEarth.jpg",
+    url: "imgs/documentaries/planetEarth.jpg",
     description: "An exploration of Earth's diverse natural environments.",
     release: 2006,
     price: 9.99,
@@ -770,7 +770,7 @@ const documentaries = [
 const podcasts = [
   {
     name: "Serial",
-    url: "img/podcasts/serial.jpg",
+    url: "imgs/podcasts/serial.jpg",
     description: "Investigating a 1999 murder case over multiple seasons.",
     release: "2014 - Present",
     price: 5.99,
