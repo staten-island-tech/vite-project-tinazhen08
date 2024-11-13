@@ -40,9 +40,8 @@ body {
 }
 
 .dark {
-  --primary: var(--dark-gray);
-  --secondary: var(--white);
-  --tertiary: var(--black); 
+  --primary: var(--black);
+  --secondary: var(--white); 
 }
 
 .container,
