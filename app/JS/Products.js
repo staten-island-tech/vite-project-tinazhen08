@@ -9,7 +9,7 @@ const movies = [
   },
   {
     name: "Mad Max: Fury Road",
-    url: "",
+    url: "imgs/movieIMG/madMax.jpg",
     description: "In a post-apocalyptic world, a warrior teams up with rebels to save a group of women.",
     release: 2015,
     price: 14.99,
@@ -17,7 +17,7 @@ const movies = [
   },
   {
     name: "John Wick",
-    url: "",
+    url: "imgs/movieIMG/johnWick.jpg",
     description: "A retired hitman seeks vengeance against those who wronged him.",
     release: 2014,
     price: 12.99,
@@ -25,7 +25,7 @@ const movies = [
   },
   {
     name: "The Dark Knight",
-    url: "",
+    url: "imgs/movieIMG/theDarkKnight.jpg",
     description: "Batman faces the Joker, a criminal mastermind bent on chaos.",
     release: 2008,
     price: 13.99,
@@ -33,7 +33,7 @@ const movies = [
   },
   {
     name: "Gladiator",
-    url: "",
+    url: "imgs/movieIMG/gladiator.jpg",
     description: "A betrayed Roman general seeks revenge against the corrupt emperor.",
     release: 2000,
     price: 10.99,
@@ -41,7 +41,7 @@ const movies = [
   },
   {
     name: "Superbad",
-    url: "",
+    url: "imgs/movieIMG/superbad.jpg",
     description: "Two high school friends navigate a wild night before graduation.",
     release: 2007,
     price: 7.99,
@@ -49,7 +49,7 @@ const movies = [
   },
   {
     name: "The Hangover",
-    url: "",
+    url: "imgs/movieIMG/theHangover.jpg",
     description: "A bachelor party in Las Vegas goes horribly wrong after a night of partying.",
     release: 2009,
     price: 8.99,
@@ -57,7 +57,7 @@ const movies = [
   },
   {
     name: "Bridesmaids",
-    url: "",
+    url: "imgs/movieIMG/bridesmaids.jpg",
     description: "A woman's life spirals out of control as she competes to be her best friend's maid of honor.",
     release: 2011,
     price: 9.99,
@@ -65,7 +65,7 @@ const movies = [
   },
   {
     name: "Mean Girls",
-    url: "",
+    url: "imgs/movieIMG/meanGirls.jpg",
     description: "A teenage girl navigates the social cliques of a new high school.",
     release: 2004,
     price: 6.99,
@@ -73,7 +73,7 @@ const movies = [
   },
   {
     name: "Groundhog Day",
-    url: "",
+    url: "imgs/movieIMG/groundhogDay.jpg",
     description: "A weatherman relives the same day over and over until he gets it right.",
     release: 1993,
     price: 5.99,
@@ -81,7 +81,7 @@ const movies = [
   },
   {
     name: "The Shawshank Redemption",
-    url: "",
+    url: "imgs/movieIMG/theShawshankRedemption.jpg",
     description: "A man wrongfully imprisoned forms a friendship with a fellow inmate.",
     release: 1994,
     price: 10.99,
@@ -89,7 +89,7 @@ const movies = [
   },
   {
     name: "Forrest Gump",
-    url: "",
+    url: "imgs/movieIMG/forrestGump.jpg",
     description: "A slow-witted man inadvertently influences major historical events.",
     release: 1994,
     price: 8.99,
@@ -97,7 +97,7 @@ const movies = [
   },
   {
     name: "Fight Club",
-    url: "",
+    url: "imgs/movieIMG/fightClub.jpg",
     description: "An insomniac office worker forms an underground fight club.",
     release: 1999,
     price: 9.99,
@@ -105,7 +105,7 @@ const movies = [
   },
   {
     name: "The Godfather",
-    url: "",
+    url: "imgs/movieIMG/theGodfather.jpg",
     description: "The aging patriarch of an organized crime dynasty transfers control to his reluctant son.",
     release: 1972,
     price: 11.99,
@@ -113,7 +113,7 @@ const movies = [
   },
   {
     name: "Pulp Fiction",
-    url: "",
+    url: "imgs/movieIMG/pulpFiction.jpg",
     description: "Interconnected stories of crime unfold in Los Angeles.",
     release: 1994,
     price: 9.99,
@@ -121,7 +121,7 @@ const movies = [
   },
   {
     name: "The Shining",
-    url: "",
+    url: "imgs/movieIMG/theShining.jpg",
     description: "A family becomes winter caretakers of a haunted hotel.",
     release: 1980,
     price: 12.99,
@@ -129,7 +129,7 @@ const movies = [
   },
   {
     name: "Get Out",
-    url: "",
+    url: "imgs/movieIMG/getOut.jpg",
     description: "A young Black man uncovers a disturbing secret while visiting his white girlfriend's family.",
     release: 2017,
     price: 14.99,
@@ -137,7 +137,7 @@ const movies = [
   },
   {
     name: "A Nightmare on Elm Street",
-    url: "",
+    url: "imgs/movieIMG/aNightmareOnElmStreet.jpg",
     description: "Teens are hunted in their dreams by a vengeful spirit.",
     release: 1984,
     price: 8.99,
@@ -145,7 +145,7 @@ const movies = [
   },
   {
     name: "The Babadook",
-    url: "",
+    url: "imgs/movieIMG/theBabadook.jpg",
     description: "A mother and her son are haunted by a sinister presence from a storybook.",
     release: 2014,
     price: 10.99,
@@ -153,7 +153,7 @@ const movies = [
   },
   {
     name: "Hereditary",
-    url: "",
+    url: "imgs/movieIMG/hereditary.jpg",
     description: "A family uncovers dark secrets after the death of their secretive grandmother.",
     release: 2018,
     price: 15.99,
@@ -161,7 +161,7 @@ const movies = [
   },
   {
     name: "Blade Runner",
-    url: "",
+    url: "imgs/movieIMG/bladeRunner.jpg",
     description: "A detective hunts rogue replicants in a dystopian future.",
     release: 1982,
     price: 13.99,
@@ -169,7 +169,7 @@ const movies = [
   },
   {
     name: "Star Wars",
-    url: "",
+    url: "imgs/movieIMG/starWars.jpg",
     description: "A group of rebels fights against an oppressive empire in a galaxy far, far away.",
     release: 1977,
     price: 10.99,
@@ -177,7 +177,7 @@ const movies = [
   },
   {
     name: "Inception",
-    url: "",
+    url: "imgs/movieIMG/inception.jpg",
     description: "A skilled thief enters the dreams of others to steal secrets.",
     release: 2010,
     price: 11.99,
@@ -185,7 +185,7 @@ const movies = [
   },
   {
     name: "The Matrix",
-    url: "",
+    url: "imgs/movieIMG/theMatrix.jpg",
     description: "A hacker discovers the world he knows is a simulated reality.",
     release: 1999,
     price: 9.99,
@@ -193,7 +193,7 @@ const movies = [
   },
   {
     name: "Arrival",
-    url: "",
+    url: "imgs/movieIMG/arrival.jpg",
     description: "A linguist is tasked with communicating with alien visitors.",
     release: 2016,
     price: 12.99,
@@ -201,7 +201,7 @@ const movies = [
   },
   {
     name: "Pride and Prejudice",
-    url: "",
+    url: "imgs/movieIMG/prideAndPrejudice.jpg",
     description: "A spirited young woman navigates love and societal expectations.",
     release: 2005,
     price: 7.99,
@@ -209,7 +209,7 @@ const movies = [
   },
   {
     name: "The Notebook",
-    url: "",
+    url: "imgs/movieIMG/theNotebook.jpg",
     description: "A passionate love story unfolds across decades.",
     release: 2004,
     price: 8.99,
@@ -217,7 +217,7 @@ const movies = [
   },
   {
     name: "Titanic",
-    url: "",
+    url: "imgs/movieIMG/titanic.jpg",
     description: "A forbidden romance develops aboard the ill-fated ship.",
     release: 1997,
     price: 9.99,
@@ -225,7 +225,7 @@ const movies = [
   },
   {
     name: "When Harry Met Sally",
-    url: "",
+    url: "imgs/movieIMG/whenHarryMetSally.jpg",
     description: "Two friends debate whether men and women can be just friends.",
     release: 1989,
     price: 7.99,
@@ -233,7 +233,7 @@ const movies = [
   },
   {
     name: "La La Land",
-    url: "",
+    url: "imgs/movieIMG/laLaLand.jpg",
     description: "A jazz musician and an aspiring actress pursue their dreams in Los Angeles.",
     release: 2016,
     price: 13.99,
@@ -241,7 +241,7 @@ const movies = [
   },
   {
     name: "Toy Story",
-    url: "",
+    url: "imgs/movieIMG/toyStory.jpg",
     description: "A cowboy doll is profoundly threatened by a new spaceman figure.",
     release: 1995,
     price: 9.99,
@@ -249,7 +249,7 @@ const movies = [
   },
   {
     name: "Finding Nemo",
-    url: "",
+    url: "imgs/movieIMG/findingNemo.jpg",
     description: "A clownfish embarks on a journey to find his missing son.",
     release: 2003,
     price: 8.99,
@@ -257,7 +257,7 @@ const movies = [
   },
   {
     name: "Spirited Away",
-    url: "",
+    url: "imgs/movieIMG/spiritedAway.jpg",
     description: "A girl navigates a mystical world to save her parents.",
     release: 2001,
     price: 11.99,
@@ -265,7 +265,7 @@ const movies = [
   },
   {
     name: "Shrek",
-    url: "",
+    url: "imgs/movieIMG/shrek.jpg",
     description: "An ogre's peaceful life is disrupted by fairy tale creatures.",
     release: 2001,
     price: 8.99,
@@ -273,7 +273,7 @@ const movies = [
   },
   {
     name: "Coco",
-    url: "",
+    url: "imgs/movieIMG/coco.jpg",
     description: "A boy journeys into the Land of the Dead to uncover his family's history.",
     release: 2017,
     price: 12.99,
@@ -292,7 +292,7 @@ const shows = [
   },
   {
     name: "The Office",
-    url: "",
+    url: "app/public/imgs/shows/theOffice.jpg",
     description: "A mockumentary about the daily lives of office employees.",
     release: "2005 - 2013",
     price: 9.99,
@@ -300,7 +300,7 @@ const shows = [
   },
   {
     name: "Parks and Recreation",
-    url: "",
+    url: "app/public/imgs/shows/parksAndRecreation.jpg",
     description: "A quirky department in a small town manages local government.",
     release: "2009 - 2015",
     price: 10.99,
@@ -308,7 +308,7 @@ const shows = [
   },
   {
     name: "Brooklyn Nine-Nine",
-    url: "",
+    url: "app/public/imgs/shows/brooklynNineNine.jpg",
     description: "A team of detectives solves crimes in a New York precinct.",
     release: "2013 - 2021",
     price: 11.99,
@@ -316,7 +316,7 @@ const shows = [
   },
   {
     name: "How I Met Your Mother",
-    url: "",
+    url: "app/public/imgs/shows/howIMetYourMother.jpg",
     description: "A man recounts the story of how he met the mother of his children.",
     release: "2005 - 2014",
     price: 9.99,
@@ -324,7 +324,7 @@ const shows = [
   },
   {
     name: "Breaking Bad",
-    url: "",
+    url: "app/public/imgs/shows/breakingBad.jpg",
     description: "A chemistry teacher turns to cooking meth after a cancer diagnosis.",
     release: "2008 - 2013",
     price: 14.99,
@@ -332,7 +332,7 @@ const shows = [
   },
   {
     name: "The Crown",
-    url: "",
+    url: "app/public/imgs/shows/theCrown.jpg",
     description: "The reign of Queen Elizabeth II is chronicled over decades.",
     release: "2016 - Present",
     price: 15.99,
@@ -340,7 +340,7 @@ const shows = [
   },
   {
     name: "Game of Thrones",
-    url: "",
+    url: "app/public/imgs/shows/gameOfThrones.jpg",
     description: "Noble families vie for power in a mythical land.",
     release: "2011 - 2019",
     price: 13.99,
@@ -348,7 +348,7 @@ const shows = [
   },
   {
     name: "The Handmaid's Tale",
-    url: "",
+    url: "app/public/imgs/shows/theHandmaid'sTale.jpg",
     description: "A woman is forced into childbearing servitude in a dystopian society.",
     release: "2017 - Present",
     price: 14.99,
@@ -356,7 +356,7 @@ const shows = [
   },
   {
     name: "The Sopranos",
-    url: "",
+    url: "app/public/imgs/shows/theSopranos.jpg",
     description: "A mob boss struggles to manage his family and criminal organization.",
     release: "1999 - 2007",
     price: 12.99,
@@ -364,7 +364,7 @@ const shows = [
   },
   {
     name: "Survivor",
-    url: "",
+    url: "app/public/imgs/shows/survivor.jpg",
     description: "Contestants are stranded in remote locations and compete for survival.",
     release: "2000 - Present",
     price: 8.99,
@@ -372,7 +372,7 @@ const shows = [
   },
   {
     name: "The Amazing Race",
-    url: "",
+    url: "app/public/imgs/shows/theAmazingRace.jpg",
     description: "Teams race around the world, completing challenges in various countries.",
     release: "2001 - Present",
     price: 9.99,
@@ -380,7 +380,7 @@ const shows = [
   },
   {
     name: "The Bachelor",
-    url: "",
+    url: "app/public/imgs/shows/theBachelor.jpg",
     description: "A single man dates multiple women to find his future wife.",
     release: "2002 - Present",
     price: 7.99,
@@ -388,7 +388,7 @@ const shows = [
   },
   {
     name: "Big Brother",
-    url: "",
+    url: "app/public/imgs/shows/bigBrother.jpg",
     description: "Houseguests live together while competing for a cash prize.",
     release: "2000 - Present",
     price: 6.99,
@@ -396,7 +396,7 @@ const shows = [
   },
   {
     name: "RuPaul's Drag Race",
-    url: "",
+    url: "app/public/imgs/shows/rupaul'sDragRace.jpg",
     description: "Drag queens compete in various challenges to be crowned America's Next Drag Superstar.",
     release: "2009 - Present",
     price: 10.99,
@@ -404,7 +404,7 @@ const shows = [
   },
   {
     name: "Mindhunter",
-    url: "",
+    url: "app/public/imgs/shows/mindhunter.jpg",
     description: "FBI agents interview serial killers to understand their psychology.",
     release: "2017 - 2019",
     price: 11.99,
@@ -412,7 +412,7 @@ const shows = [
   },
   {
     name: "Killing Eve",
-    url: "",
+    url: "app/public/imgs/shows/killing eve.jpg",
     description: "An intelligence investigator becomes obsessed with a skilled assassin.",
     release: "2018 - 2022",
     price: 12.99,
@@ -420,7 +420,7 @@ const shows = [
   },
   {
     name: "True Detective",
-    url: "",
+    url: "app/public/imgs/shows/trueDetective.jpg",
     description: "Detectives investigate complex and disturbing crimes.",
     release: "2014 - Present",
     price: 13.99,
@@ -428,7 +428,7 @@ const shows = [
   },
   {
     name: "The Sinner",
-    url: "",
+    url: "app/public/imgs/shows/theSinner.jpg",
     description: "A detective investigates the motivations behind shocking crimes.",
     release: "2017 - 2021",
     price: 10.99,
@@ -436,7 +436,7 @@ const shows = [
   },
   {
     name: "Ozark",
-    url: "",
+    url: "app/public/imgs/shows/ozark.jpg",
     description: "A financial planner relocates his family to launder money for a drug cartel.",
     release: "2017 - 2022",
     price: 14.99,
@@ -444,7 +444,7 @@ const shows = [
   },
   {
     name: "Game of Thrones",
-    url: "",
+    url: "app/public/imgs/shows/gameOfThrones.jpg",
     description: "Noble families vie for power in a mythical land.",
     release: "2011 - 2019",
     price: 13.99,
@@ -452,7 +452,7 @@ const shows = [
   },
   {
     name: "The Witcher",
-    url: "",
+    url: "app/public/imgs/shows/theWitcher.jpg",
     description: "A monster hunter navigates a world of magic and political intrigue.",
     release: "2019 - Present",
     price: 11.99,
@@ -460,7 +460,7 @@ const shows = [
   },
   {
     name: "Shadow and Bone",
-    url: "",
+    url: "app/public/imgs/shows/shadowAndBone.jpg",
     description: "A young soldier discovers a power that could unite her war-torn world.",
     release: "2021 - Present",
     price: 10.99,
@@ -468,7 +468,7 @@ const shows = [
   },
   {
     name: "His Dark Materials",
-    url: "",
+    url: "app/public/imgs/shows/hisDarkMaterials.jpg",
     description: "A girl journeys through parallel universes to save kidnapped children.",
     release: "2019 - 2022",
     price: 12.99,
@@ -476,7 +476,7 @@ const shows = [
   },
   {
     name: "The Mandalorian",
-    url: "",
+    url: "app/public/imgs/shows/theMandalorian.jpg",
     description: "A lone bounty hunter navigates the outer reaches of the galaxy.",
     release: "2019 - Present",
     price: 13.99,
@@ -484,7 +484,7 @@ const shows = [
   },
   {
     name: "Sherlock",
-    url: "",
+    url: "app/public/imgs/shows/sherlockl.jpg",
     description: "A modern update of Sherlock Holmes' detective adventures.",
     release: "2010 - 2017",
     price: 11.99,
@@ -492,7 +492,7 @@ const shows = [
   },
   {
     name: "True Detective",
-    url: "",
+    url: "app/public/imgs/shows/trueDetective.jpg",
     description: "Detectives investigate complex and disturbing crimes.",
     release: "2014 - Present",
     price: 13.99,
@@ -500,7 +500,7 @@ const shows = [
   },
   {
     name: "Broadchurch",
-    url: "",
+    url: "app/public/imgs/shows/broadchurch.jpg",
     description: "A small town is rocked by the murder of a young boy.",
     release: "2013 - 2017",
     price: 10.99,
@@ -508,7 +508,7 @@ const shows = [
   },
   {
     name: "The Killing",
-    url: "",
+    url: "app/public/imgs/shows/theKilling.jpg",
     description: "A Seattle detective investigates a young girl's murder.",
     release: "2011 - 2014",
     price: 9.99,
@@ -516,7 +516,7 @@ const shows = [
   },
   {
     name: "The Sinner",
-    url: "",
+    url: "app/public/imgs/shows/theSinner.jpg",
     description: "A detective investigates the motivations behind shocking crimes.",
     release: "2017 - 2021",
     price: 10.99,
@@ -524,7 +524,7 @@ const shows = [
   },
   {
     name: "The Tonight Show Starring Jimmy Fallon",
-    url: "",
+    url: "app/public/imgs/shows/theTonightShowStarringJimmyFallon.jpg",
     description: "A late-night talk show featuring celebrity interviews and games.",
     release: "2014 - Present",
     price: 6.99,
@@ -532,7 +532,7 @@ const shows = [
   },
   {
     name: "The Late Show with Stephen Colbert",
-    url: "",
+    url: "app/public/imgs/shows/theLateShowWithStephenColbert.jpg",
     description: "A comedic take on current events and interviews with celebrities.",
     release: "2015 - Present",
     price: 7.99,
@@ -540,7 +540,7 @@ const shows = [
   },
   {
     name: "The Ellen DeGeneres Show",
-    url: "",
+    url: "app/public/imgs/shows/theEllenDeGeneresShow.jpg",
     description: "Ellen hosts celebrity guests and showcases viral videos.",
     release: "2003 - 2022",
     price: 8.99,
@@ -548,7 +548,7 @@ const shows = [
   },
   {
     name: "Jimmy Kimmel Live!",
-    url: "",
+    url: "app/public/imgs/shows/jimmyKimmelLive!.jpg",
     description: "A late-night talk show featuring comedy sketches and interviews.",
     release: "2003 - Present",
     price: 7.99,
@@ -556,7 +556,7 @@ const shows = [
   },
   {
     name: "The Daily Show",
-    url: "",
+    url: "app/public/imgs/shows/theDailyShow.jpg",
     description: "A satirical news program covering current events and politics.",
     release: "1996 - Present",
     price: 6.99,
@@ -575,7 +575,7 @@ const documentaries = [
   },
   {
     name: "Our Planet",
-    url: "",
+    url: "app/public/imgs/documentaries/ourPlanet.jpg",
     description: "A documentary highlighting the beauty of nature and the impact of climate change.",
     release: 2019,
     price: 12.99,
@@ -583,7 +583,7 @@ const documentaries = [
   },
   {
     name: "The Blue Planet",
-    url: "",
+    url: "app/public/imgs/documentaries/theBluePlanet.jpg",
     description: "A deep dive into the world's oceans and marine life.",
     release: 2001,
     price: 8.99,
@@ -591,7 +591,7 @@ const documentaries = [
   },
   {
     name: "Cosmos: A Spacetime Odyssey",
-    url: "",
+    url: "app/public/imgs/documentaries/cosmosASpacetimeOdyssey.jpg",
     description: "A journey through space and time exploring the universe.",
     release: 2014,
     price: 14.99,
@@ -599,7 +599,7 @@ const documentaries = [
   },
   {
     name: "March of the Penguins",
-    url: "",
+    url: "app/public/imgs/documentaries/marchOfThePenguins.jpg",
     description: "A documentary following the migration of emperor penguins.",
     release: 2005,
     price: 7.99,
@@ -607,7 +607,7 @@ const documentaries = [
   },
   {
     name: "The Civil War",
-    url: "",
+    url: "app/public/imgs/documentaries/theCivilWar.jpg",
     description: "A comprehensive look at the American Civil War.",
     release: 1990,
     price: 11.99,
@@ -615,7 +615,7 @@ const documentaries = [
   },
   {
     name: "Ken Burns: The Vietnam War",
-    url: "",
+    url: "app/public/imgs/documentaries/theVietnamWar.jpg",
     description: "An in-depth exploration of the Vietnam War's history and impact.",
     release: 2017,
     price: 13.99,
@@ -623,7 +623,7 @@ const documentaries = [
   },
   {
     name: "13th",
-    url: "",
+    url: "app/public/imgs/documentaries/13th.jpg",
     description: "Explores the history of racial inequality in the United States.",
     release: 2016,
     price: 9.99,
@@ -631,7 +631,7 @@ const documentaries = [
   },
   {
     name: "The Act of Killing",
-    url: "",
+    url: "app/public/imgs/documentaries/theActOfKilling.jpg",
     description: "Former Indonesian death squad leaders reenact their crimes.",
     release: 2012,
     price: 10.99,
@@ -639,7 +639,7 @@ const documentaries = [
   },
   {
     name: "Inside the Vatican",
-    url: "",
+    url: "app/public/imgs/documentaries/insideTheVatican.jpg",
     description: "A look inside the Vatican and its role in the Catholic Church.",
     release: 2019,
     price: 11.99,
@@ -647,7 +647,7 @@ const documentaries = [
   },
   {
     name: "Making a Murderer",
-    url: "",
+    url: "app/public/imgs/documentaries/makingAMurderer.jpg",
     description: "A true crime documentary about a man wrongfully convicted of a crime.",
     release: 2015,
     price: 13.99,
@@ -655,7 +655,7 @@ const documentaries = [
   },
   {
     name: "The Jinx",
-    url: "",
+    url: "app/public/imgs/documentaries/theJinx.jpg",
     description: "A look at the life of a real estate heir suspected of murder.",
     release: 2015,
     price: 12.99,
@@ -663,7 +663,7 @@ const documentaries = [
   },
   {
     name: "Wild Wild Country",
-    url: "",
+    url: "app/public/imgs/documentaries/wildWildCountry.jpg",
     description: "The rise and fall of a controversial Indian guru in Oregon.",
     release: 2018,
     price: 14.99,
@@ -671,7 +671,7 @@ const documentaries = [
   },
   {
     name: "The Keepers",
-    url: "",
+    url: "app/public/imgs/documentaries/theKeepers.jpg",
     description: "Investigating the unsolved murder of a nun and its connection to abuse.",
     release: 2017,
     price: 13.99,
@@ -679,7 +679,7 @@ const documentaries = [
   },
   {
     name: "Evil Genius",
-    url: "",
+    url: "app/public/imgs/documentaries/evilGenius.jpg",
     description: "A bizarre bank heist leads to a murder investigation.",
     release: 2018,
     price: 12.99,
@@ -687,7 +687,7 @@ const documentaries = [
   },
   {
     name: "Cosmos: A Spacetime Odyssey",
-    url: "",
+    url: "app/public/imgs/documentaries/cosmosASpacetimeOdyssey.jpg",
     description: "A journey through space and time exploring the universe.",
     release: 2014,
     price: 14.99,
@@ -695,7 +695,7 @@ const documentaries = [
   },
   {
     name: "The Universe",
-    url: "",
+    url: "app/public/imgs/documentaries/theUniverse.jpg",
     description: "Exploring the wonders and mysteries of our universe.",
     release: 2007,
     price: 9.99,
@@ -703,7 +703,7 @@ const documentaries = [
   },
   {
     name: "The Planets",
-    url: "",
+    url: "app/public/imgs/documentaries/thePlanets.jpg",
     description: "A documentary series exploring the planets in our solar system.",
     release: 2019,
     price: 13.99,
@@ -711,7 +711,7 @@ const documentaries = [
   },
   {
     name: "Brain Games",
-    url: "",
+    url: "app/public/imgs/documentaries/brainGames.jpg",
     description: "A show that explores the science of how our brains work.",
     release: 2013,
     price: 8.99,
@@ -719,7 +719,7 @@ const documentaries = [
   },
   {
     name: "Our Planet",
-    url: "",
+    url: "app/public/imgs/documentaries/ourPlanet.jpg",
     description: "A documentary highlighting the beauty of nature and the impact of climate change.",
     release: 2019,
     price: 12.99,
@@ -727,7 +727,7 @@ const documentaries = [
   },
   {
     name: "Won't You Be My Neighbor?",
-    url: "",
+    url: "app/public/imgs/documentaries/wontYouBeMyNeighbor.jpg",
     description: "A look at the life of beloved children's television host Fred Rogers.",
     release: 2018,
     price: 11.99,
@@ -735,7 +735,7 @@ const documentaries = [
   },
   {
     name: "Jiro Dreams of Sushi",
-    url: "",
+    url: "app/public/imgs/documentaries/jiroDreamsOfSushi.jpg",
     description: "A renowned sushi chef strives for culinary perfection.",
     release: 2011,
     price: 10.99,
@@ -743,7 +743,7 @@ const documentaries = [
   },
   {
     name: "Amy",
-    url: "",
+    url: "app/public/imgs/documentaries/amy.jpg",
     description: "A portrait of the life and career of singer Amy Winehouse.",
     release: 2015,
     price: 12.99,
@@ -751,7 +751,7 @@ const documentaries = [
   },
   {
     name: "Exit Through the Gift Shop",
-    url: "",
+    url: "app/public/imgs/documentaries/exitThroughTheGiftShop.jpg",
     description: "An amateur filmmaker documents the world of street art.",
     release: 2010,
     price: 9.99,
@@ -759,7 +759,7 @@ const documentaries = [
   },
   {
     name: "RBG",
-    url: "",
+    url: "app/public/imgs/documentaries/rbg.jpg",
     description: "A documentary about Supreme Court Justice Ruth Bader Ginsburg.",
     release: 2018,
     price: 11.99,
@@ -778,7 +778,7 @@ const podcasts = [
   },
   {
     name: "My Favorite Murder",
-    url: "",
+    url: "app/public/imgs/podcasts/myFavoriteMuder.webp",
     description: "A comedic take on true crime stories and events.",
     release: "2016 - Present",
     price: 6.99,
@@ -786,7 +786,7 @@ const podcasts = [
   },
   {
     name: "Criminal",
-    url: "",
+    url: "app/public/imgs/podcasts/criminal.webp",
     description: "Stories of people who've done wrong and those who have been wronged.",
     release: "2014 - Present",
     price: 4.99,
@@ -794,7 +794,7 @@ const podcasts = [
   },
   {
     name: "Casefile",
-    url: "",
+    url: "app/public/imgs/podcasts/casefile.jpg",
     description: "An Australian podcast detailing true crime cases.",
     release: "2016 - Present",
     price: 3.99,
@@ -802,7 +802,7 @@ const podcasts = [
   },
   {
     name: "Sword and Scale",
-    url: "",
+    url: "app/public/imgs/podcasts/swordAndScale.jpg",
     description: "Exploring the dark side of humanity and true crime stories.",
     release: "2014 - Present",
     price: 5.99,
@@ -810,7 +810,7 @@ const podcasts = [
   },
   {
     name: "The Joe Rogan Experience",
-    url: "",
+    url: "app/public/imgs/podcasts/theJoeRoganExperience.jpg",
     description: "A long-form conversation with celebrities and experts.",
     release: "2009 - Present",
     price: 0.00,  // Free
@@ -818,23 +818,15 @@ const podcasts = [
   },
   {
     name: "Conan O'Brien Needs A Friend",
-    url: "",
+    url: "app/public/imgs/podcasts/conanO'BrienNeedsAFreind.webp",
     description: "Conan interviews celebrities he admires.",
     release: "2018 - Present",
     price: 0.00,  // Free
     genre: "Comedy",
   },
   {
-    name: "My Dad Wrote A Porno",
-    url: "",
-    description: "A comedic reading of a poorly written erotic novel.",
-    release: "2015 - Present",
-    price: 4.99,
-    genre: "Comedy",
-  },
-  {
     name: "How Did This Get Made?",
-    url: "",
+    url: "app/public/imgs/podcasts/howDidThisGetMadeNew.png",
     description: "A comedic take on bad movies with guest appearances.",
     release: "2010 - Present",
     price: 5.99,
@@ -842,7 +834,7 @@ const podcasts = [
   },
   {
     name: "Wait, Wait, Don't Tell Me!",
-    url: "",
+    url: "app/public/imgs/podcasts/waitWaitDontTellMe.png",
     description: "A humorous take on the week's news in quiz format.",
     release: "1998 - Present",
     price: 3.99,
@@ -850,7 +842,7 @@ const podcasts = [
   },
   {
     name: "How I Built This",
-    url: "",
+    url: "app/public/imgs/podcasts/howIBuiltThis.png",
     description: "Stories behind the people who created successful companies.",
     release: "2016 - Present",
     price: 4.99,
@@ -858,7 +850,7 @@ const podcasts = [
   },
   {
     name: "The Tim Ferriss Show",
-    url: "",
+    url: "app/public/imgs/podcasts/theTimFerrissShow.jpg",
     description: "Interviews with high performers to discover their secrets.",
     release: "2014 - Present",
     price: 5.99,
@@ -866,7 +858,7 @@ const podcasts = [
   },
   {
     name: "The Indicator from Planet Money",
-    url: "",
+    url: "app/public/imgs/podcasts/theIndicatorFromPlanetMoney.jpg",
     description: "Short episodes explaining business and economic concepts.",
     release: "2017 - Present",
     price: 3.99,
@@ -874,7 +866,7 @@ const podcasts = [
   },
   {
     name: "Masters of Scale",
-    url: "",
+    url: "app/public/imgs/podcasts/masterOfScale.jpg",
     description: "Founders share their stories of scaling companies.",
     release: "2017 - Present",
     price: 6.99,
@@ -882,7 +874,7 @@ const podcasts = [
   },
   {
     name: "WorkLife with Adam Grant",
-    url: "",
+    url: "app/public/imgs/podcasts/worklifeWithAdamGrant.png",
     description: "Exploring how to make work not suck.",
     release: "2018 - Present",
     price: 5.99,
@@ -890,7 +882,7 @@ const podcasts = [
   },
   {
     name: "Reply All",
-    url: "",
+    url: "app/public/imgs/podcasts/replyAll.jpg",
     description: "Stories about how people shape the internet.",
     release: "2014 - 2020",
     price: 7.99,
@@ -898,7 +890,7 @@ const podcasts = [
   },
   {
     name: "The Vergecast",
-    url: "",
+    url: "app/public/imgs/podcasts/theVergecast.jpg",
     description: "A weekly show discussing the latest in technology.",
     release: "2014 - Present",
     price: 0.00,  // Free
@@ -906,7 +898,7 @@ const podcasts = [
   },
   {
     name: "Wired Tech in Two",
-    url: "",
+    url: "app/public/imgs/podcasts/wiredTechInTwo.jpg",
     description: "A quick summary of the latest technology news.",
     release: "2019 - Present",
     price: 2.99,
@@ -914,7 +906,7 @@ const podcasts = [
   },
   {
     name: "Accidental Tech Podcast",
-    url: "",
+    url: "app/public/imgs/podcasts/accidentalTechPodcast.png",
     description: "A discussion about tech and software development.",
     release: "2013 - Present",
     price: 3.99,
@@ -922,7 +914,7 @@ const podcasts = [
   },
   {
     name: "StartUp Podcast",
-    url: "",
+    url: "app/public/imgs/podcasts/startupPodcast.png",
     description: "A look at what it's really like to start a business.",
     release: "2014 - Present",
     price: 5.99,
@@ -930,7 +922,7 @@ const podcasts = [
   },
   {
     name: "Hidden Brain",
-    url: "",
+    url: "app/public/imgs/podcasts/hiddenBrain.png",
     description: "Exploring the unconscious patterns that drive human behavior.",
     release: "2015 - Present",
     price: 4.99,
@@ -938,7 +930,7 @@ const podcasts = [
   },
   {
     name: "TED Radio Hour",
-    url: "",
+    url: "app/public/imgs/podcasts/tedRadioHour.jpg",
     description: "A journey through fascinating ideas and TED talks.",
     release: "2013 - Present",
     price: 0.00,  // Free
@@ -946,7 +938,7 @@ const podcasts = [
   },
   {
     name: "Freakonomics Radio",
-    url: "",
+    url: "app/public/imgs/podcasts/freakonomicsRadio.png",
     description: "Exploring the hidden side of everything with economics.",
     release: "2010 - Present",
     price: 3.99,
@@ -954,7 +946,7 @@ const podcasts = [
   },
   {
     name: "Philosophize This!",
-    url: "",
+    url: "app/public/imgs/podcasts/philosophizeThis.jpg",
     description: "An accessible introduction to various philosophical ideas.",
     release: "2013 - Present",
     price: 2.99,
@@ -962,7 +954,7 @@ const podcasts = [
   },
   {
     name: "The Happiness Lab",
-    url: "",
+    url: "app/public/imgs/podcasts/theHappinessLab.jpg",
     description: "Exploring the science of happiness and well-being.",
     release: "2019 - Present",
     price: 4.99,
