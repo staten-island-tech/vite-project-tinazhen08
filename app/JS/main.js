@@ -10,7 +10,7 @@ function card(x) {
         <h2 class="card-header">${item.name}</h2>
         <img src="${item.url}" alt="" class="card-img"></img>
         <p class="description">${item.description}</p>
-        <h4 class="release">${item.release}</h4>
+        <p class="release">${item.release}</p>
         <h3 class="price">$${item.price}</h3>
       </div>`
     )
