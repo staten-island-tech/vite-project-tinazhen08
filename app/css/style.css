@@ -13,8 +13,8 @@ body,
   --black: #000000; 
 
   --primary: var(white);
-  --secondary: var(--black);
-  --tertiary: var(--dark-gray); 
+  --secondary: var(--dark-gray);
+  --tertiary: var(--black); 
 
   --h1: 5.61rem;
   --h2: 4.209rem;
@@ -36,13 +36,12 @@ body {
 
 .light {
   --primary: var(--white);
-  --secondary: var(--black);
+  --secondary: var(--dark-gray);
 }
 
 .dark {
   --primary: var(--dark-gray);
   --secondary: var(--white); 
-  --tertiary: var(--black);
 }
 
 .container,
