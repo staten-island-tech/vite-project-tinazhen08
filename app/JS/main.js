@@ -11,7 +11,7 @@ function card(x) {
         <img src="${item.url}" alt="" class="card-img"></img>
         <p class="description">${item.description}</p>
         <p class="release">${item.release}</p>
-        <h3 class="price">$${item.price}</h3>
+        <h6 class="price">$${item.price}</h6>
       </div>`
     )
   );
