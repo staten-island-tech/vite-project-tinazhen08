@@ -144,14 +144,14 @@ body {
 }
 
 .description{
-  font-size: var(--h6);
+  font-size: var(--h5);
   margin-top: 1rem;
   color: var(--secondary);
   text-align: center;
 }
 
 .price{
-  font-size: var(--h6);
+  font-size: var(--h5);
   color: var(--secondary);
   text-align: center;
   margin-bottom: 2rem;
