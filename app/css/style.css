@@ -48,9 +48,10 @@ body {
 .genres {
   margin: 2rem auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-shrink: 0%;
 }
 
 .btn{
@@ -106,8 +107,8 @@ body {
 }
 
 .card {
-  height: 80%;
   width: 30%;
+  min-height: 300px;
   border: 10px solid var(--secondary);
   box-shadow: 5px 5px var(--tertiary);
   border-radius: 25px;
@@ -128,7 +129,7 @@ body {
 
 .card-img {
   width: 50%;
-  height: 70%;
+  height: 75%;
   object-fit: cover;
   margin: 1rem auto;
   border-radius: 1rem;
